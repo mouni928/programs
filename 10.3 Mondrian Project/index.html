@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    .body{
+      padding: 0;
+      margin: 0;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      display: flex;
+      
+    }
+    .container{
+      height: 748px;
+      width: 748px;
+      display: grid;
+      gap: 9px;
+      background-color: #000;
+      grid-template-columns: 320px 198px 153px 50px;
+      grid-template-rows: 414px 130px 155px 20px;
+
+    }
+    .item{
+      background-color: #F0F1EC;
+    }
+  
+    .fi{
+      background-color: #E72F24;
+      grid-area: 1 / 1 / 2 / 2;
+    }
+    .se{
+      background-color: #F0F1EC;
+      grid-area: 1 / 2 / 2 / -1;
+    }
+    .th{
+      background-color: #F0F1EC;
+      grid-area: 2 / 1 / 4 / 2;
+    }
+    .fo{
+      background-color: #F0F1EC;
+      grid-area: 2 / 2 / 4 / 4;
+    }
+    .fif{
+      background-color: #004592;
+      grid-area: 2 / 4 / 3 / -1;
+      border-bottom: 10px solid black;
+    }
+    .si{
+      background-color: #F0F1EC;
+      grid-area: 4 / 1 / -1 / 2;
+    }
+    .sev{
+      background-color: #F9D01E;
+      grid-area: 4 / 2 /-1 / 3;
+    }
+    .ei{
+      background-color: #232629;
+      grid-area: 4 / 3 / -1 / 4;
+    }
+    .ni{
+      background-color: #F0F1EC;
+      grid-area: 3 / 4 / -1 / -1;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <!-- <div class="item top"> -->
+      <div class="item fi"></div>
+      <div class="item se"></div>
+    <!-- </div> -->
+
+    <!-- <div class="middle"> -->
+      <div class="item th"></div>
+      <div class="item fo"></div>
+      <div class="item fif"></div>
+    <!-- </div> -->
+
+    <!-- <div class="bottom"> -->
+      <div class="item si" ></div>
+      <div class="item sev" ></div>
+      <div class="item ei"></div>
+      <div class="item ni"></div>
+    <!-- </div> -->
+  </div>
+  <!-- Write your HTML here -->
+</body>
+
+</html>
